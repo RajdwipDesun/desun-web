@@ -486,3 +486,74 @@
         height: 250px;
     }
 }
+
+@media (max-width: 576px) { 
+    .press_banner-root .content {
+        gap: 10px;
+    }
+    .press_banner-root .content h1 {
+        font-size: 20px;
+    }
+    .workspace-root .details {
+        flex-direction: column;
+    }
+    .pressCard {
+        width: 100%;
+    }
+    .business-house-root .box-list {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .video_bg_root .video_root .video #myVideo {
+        width: 90%;
+    }
+    .workspace-root .details .details-img {
+        width: 100%;
+    }
+    .workspace-root .details .content {
+        width: 100%;
+    }
+    .video_bg_root .video_bg {
+        height: 150px;
+    }
+    .video_bg_root .video_root {
+        margin-bottom: -22%;
+    }
+    .watch_discover_root {
+        flex-direction: column;
+    }
+    .watch_discover_root .watch_discover {
+        width: 100%;
+        align-items: center;
+    }
+    .watch_discover_root p:nth-child(2) {
+        width: 100%;
+        margin-top: 10px;
+    }
+    .watch_discover_root .watch_discover h1 {
+        font-size: 22px;
+    }
+    .time-cam p {
+        text-align: start;
+    }
+    .highlights_root h1 {
+        font-size: 22px;
+    }
+    .press_banner-root .content .logs img {
+        width: 15px;
+        height: 15px;
+    }
+    .press_banner-root .content p {
+        font-size: 8px !important;
+    }
+    .buttonset .calender img {
+        width: 15px;
+        height: 15px;
+    }
+    .business-house-root {
+        margin-top: 2rem !important;
+    }
+    .pressCard:hover {
+        width: 100%;
+    }
+}

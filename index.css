@@ -444,10 +444,13 @@ body {
 }
 
 .tv9-award-title h3 {
+    font-family: var(--font-primary);
+    color: var(--dark-blue);
     margin: 0;
 }
 
 .tv9-award-title p {
+    font-family: var(--font-primary);
     margin: 0;
 }
 
@@ -487,7 +490,7 @@ body {
 .some_of_our_clicks-root {
     background-color: #F8FFF0;
     padding: 5rem 0;
-    width: 100%;
+    width: 80%;
 }
 
 .some_of_our_clicks-root h1 {
@@ -502,6 +505,30 @@ body {
     margin: 0;
     /* padding-top: 80px; */
     width: 100%;
+}
+.some_of_our_clicks-root .some_clicks {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 10px;
+}
+.some_of_our_clicks-root .some_clicks div:nth-child(1){
+    width: 35%;
+}
+.some_of_our_clicks-root .some_clicks div:nth-child(2){
+    width: 40%;
+}
+.some_of_our_clicks-root .some_clicks div:nth-child(3){
+    width: 25%;
+}
+.some_of_our_clicks-root .some_clicks div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.some_of_our_clicks-root .some_clicks div img {
+    width: 100%;
+    height: 100%;
 }
 
 /* carousel_container */
@@ -839,6 +866,7 @@ body {
     justify-content: space-between;
     gap: 20px;
 }
+
 .company-name {
     font-family: var(--font-primary);
     font-weight: var(--font-weight-regular);
@@ -862,13 +890,14 @@ body {
     align-items: center;
     gap: 20px;
 }
+
 .time-cam p {
     margin: 0;
     font-family: var(--font-primary);
     font-weight: var(--font-weight-medium);
     font-size: 14px;
     width: 70%;
-} 
+}
 
 .booking-cta {
     margin-top: 30px;
@@ -882,7 +911,7 @@ body {
     border-radius: 5px;
     font-size: 18px;
     cursor: pointer;
-    width:fit-content;
+    width: fit-content;
     font-weight: 500;
     transition: background-color 0.3s;
 }
@@ -1040,6 +1069,10 @@ body {
     text-decoration: underline;
 }
 
+.video-container-res {
+    display: none;
+}
+
 @media (max-width: 768px) {
     .booking-container {
         flex-direction: column;
@@ -1053,6 +1086,7 @@ body {
     .booking-title {
         text-align: center;
     }
+
     .tv9-award-description {
         flex-direction: column;
     }
@@ -1063,18 +1097,19 @@ body {
     .banner-text {
         width: 60%;
     }
-    
+
     .excellence-brands .box {
         width: 30%;
     }
-    
+
     .winning-moments-container {
         width: 80%;
     }
-    
+
     .booking-container {
         width: 95%;
     }
+
     .tv9-award-description {
         flex-direction: column;
     }
@@ -1084,42 +1119,43 @@ body {
     .banner-text h1 {
         font-size: 2.5em;
     }
-    
+
     .business-house-root .box-list {
         gap: 20px;
     }
-    
+
     .business-icon {
         width: 100px;
     }
-    
+
     .discover-excellence-root .content h1 {
         width: 80%;
     }
-    
+
     .discover-excellence-root .content p {
         width: 70%;
     }
-    
+
     .winning-moments-row {
         flex-direction: column;
         align-items: center;
     }
-    
+
     .winning-moments-image-container {
         width: 100%;
         max-width: 400px;
     }
-    
+
     .winning-moments-content {
         width: 100%;
         align-items: center;
         text-align: center;
     }
-    
+
     .winning-moments-gallery {
         justify-content: center;
     }
+
     .tv9-award-description {
         flex-direction: column;
     }
@@ -1129,139 +1165,302 @@ body {
     .banner-text {
         width: 80%;
     }
-    
+
     .banner-text h1 {
         font-size: 2em;
     }
-    
+
     .business-house-root .box-list {
         flex-wrap: wrap;
         justify-content: center;
     }
-    
+
     .excellence-brands {
         flex-wrap: wrap;
         justify-content: center;
     }
-    
+
     .excellence-brands .box {
         width: 45%;
     }
-    
+
     .video-container .video-root video {
         height: 280px;
     }
-    
+
     .carousel-container {
         max-width: 90%;
     }
-    
+
     .let_us_serve_you-root .uper-content {
         flex-direction: column;
         align-items: center;
     }
-    
+
     .let_us_serve_you-root .uper-content img {
         width: 80%;
         margin-bottom: 30px;
     }
-    
+
     .let_us_serve_you-root .uper-content div {
         width: 100%;
         text-align: center;
     }
-    
+
     .our_press_release-root .container {
         flex-direction: column;
         align-items: center;
     }
-    
+
     .our_press_release-root .card {
         width: 100%;
         max-width: 345px;
     }
+
     .tv9-award-description {
         flex-direction: column;
     }
 }
 
 @media (max-width: 576px) {
-    .banner-text h1 {
-        font-size: 1.8em;
+    .banner-text {
+        width: 100%;
+        height: 99%;
+        background-color: #52A60390;
     }
-    
+    .banner-text h1 {
+        font-size: 1em;
+        line-height: 20px;
+    }
+    .banner-text p {
+        font-size: 14px;
+    }
+    .shape1 {
+        display: none;
+    }
+    .shape2 {
+        display: none;
+    }
+    .business-house-root {
+        gap: 10px;
+    }
     .business-icon {
         width: 80px;
     }
-    
+
     .excellence-brands .box {
-        width: 100%;
+        width: 30%;
     }
-    
+
     .video-container .video-root video {
         height: 240px;
     }
-    
+
     .video-container .video-root .button img {
         width: 4rem;
         height: 4rem;
     }
-    
+
     .winning-moments-gallery {
         flex-wrap: wrap;
     }
-    
+
     .winning-moments-gallery img {
         width: 100%;
         max-width: 146px;
     }
-    
+
     .carousel-container .swiper-slide {
         width: 100% !important;
     }
-    
+
     .let_us_serve_you-root .content-root {
         width: 90%;
     }
-    
+
     .booking-container {
         flex-direction: column;
     }
-    
-    .left-panel, .right-panel {
+
+    .left-panel,
+    .right-panel {
         width: 100%;
         padding: 20px;
     }
-    
+
     .expert-info {
         flex-direction: column;
         align-items: center;
         text-align: center;
     }
-    
+
     .expert-image {
         width: 80%;
         max-width: 300px;
     }
-    
+
     .booking-title {
         width: 100%;
         text-align: center;
     }
-    
+
     .time-cam {
         justify-content: center;
     }
-    
+
     .time-cam p {
         width: 100%;
     }
-    
+
     .booking-cta {
         display: flex;
         justify-content: center;
     }
+
     .tv9-award-description {
         flex-direction: column;
+    }
+
+    .business-house-root {
+        margin: 2rem 0.5rem;
+    }
+
+    .business-house-root h1 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .discover-excellence-root .content h1 {
+        padding-top: 20px;
+        font-size: 20px;
+        line-height: 30px;
+        color: #333333;
+    }
+
+    .discover-excellence-root .content p {
+        font-size: 14px;
+        color: #777777;
+    }
+
+    .discover-excellence-root .background {
+        display: none;
+    }
+
+    .discover-excellence-root .bgimage1 {
+        display: none;
+    }
+
+    .discover-excellence-root .content {
+        position: relative;
+        gap: 10px;
+    }
+
+    .winning-moments-root h1 {
+        font-size: 20px;
+        line-height: 30px
+    }
+
+    .winning-moments-root p {
+        font-size: 14px;
+        width: 90%;
+    }
+
+    .winning-moments-root {
+        gap: 10px;
+    }
+
+    .slide img {
+        width: 100%
+    }
+
+    .prev {
+        left: 5px;
+    }
+
+    .next {
+        right: 5px;
+    }
+
+    .boba {
+        margin: 20px !important;
+    }
+
+    .tv9-award-title {
+        align-items: start;
+    }
+
+    .winning-moments-root p {
+        text-align: start;
+    }
+
+    .left-panel,
+    .right-panel {
+        width: 90%;
+    }
+
+    .video-container {
+        display: none;
+    }
+
+    .video-container-res {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .video-container-res #myVideo {
+        width: 360px;
+        height: auto;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+
+    .video-container-res .button-res {
+        position: absolute;
+        color: #fff;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .video-container-res .button-res img {
+        width: 80px;
+        height: 80px;
+    }
+    .consultation-root .container {
+        position: relative;
+    }
+    .consultation-root .consultation-bg {
+        display: none;
+    }
+    .some_of_our_clicks-root {
+        padding: 2rem 0;
+    }
+    .some_of_our_clicks-root h1 {
+        font-size: 24px;
+        text-align: center;
+    }
+    .carousel-container h1 {
+        font-size: 24px;
+        text-align: center;
+    }
+    .let_us_serve_you-root h1 {
+        font-size: 24px;
+        text-align: center;
+        line-height: 34px;
+    }
+    .let_us_serve_you-root div>div>p {
+       text-align: center;
+       width: 100%;
+    }
+    .let_us_serve_you-root .uper-content {
+        gap: 10px;
     }
 }
