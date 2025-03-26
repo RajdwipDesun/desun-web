@@ -1310,6 +1310,7 @@ body {
 
     .time-cam p {
         width: 100%;
+        text-align: start;
     }
 
     .booking-cta {

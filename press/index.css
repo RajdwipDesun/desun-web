@@ -556,4 +556,10 @@
     .pressCard:hover {
         width: 100%;
     }
+    .highlights_root .title {
+        font-size: 14px;
+    }
+    .pressCard h1 {
+        font-size: 18px;
+    }
 }
